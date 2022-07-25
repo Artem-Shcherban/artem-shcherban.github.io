@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Evolventa Bold'), url('fonts/Evolventa-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Sallim Signature';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sallim Signature Regular'), url('fonts/SallimSignature.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Apercu Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Apercu Pro'), url('fonts/apercu_regular_pro.otf');
+}
+
+body {
+    font-family: 'Apercu Pro';
+    margin: 0px;
+    padding: 0px;
+    color: #1d1d1d;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+a {
+    text-decoration: none;
+}
+

@@ -1,0 +1,150 @@
+.about {
+    padding: 60px 30px 60px 30px;
+}
+
+.about img {
+    width: 90%;
+}
+
+.about-pin {
+    border: 1px solid #1D1D1D;
+    border-radius: 90px;
+    width: fit-content;
+    padding: 5px 40px 5px 40px;
+    margin-bottom: 5px;
+}
+
+.about-image{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-description {
+    width: 100%;
+    font-family: 'Apercu Pro';
+    font-size: 25px;
+    line-height: 31px;
+}
+
+.about-self{
+    display: flex;
+}
+
+.about-self-photo{
+    background-image: url(../assets/Artemfoto.png);
+    background-size: cover;
+    border-radius: 30px;
+    width: 40%;
+    height: 520px;
+    margin-right: 40px;
+}
+
+.about-self-text{
+    width: 50%;
+}
+
+.about-self-text-title{
+    margin-bottom: 20px;
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 47px;
+}
+
+.about-self-text-content {
+    font-family: 'Apercu Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+    margin-bottom: 30px;
+}
+
+.about-self-text-button {
+    background: #ED543F;
+    box-shadow: inset 1px 7px 10px rgba(255, 255, 255, 0.15);
+    border-radius: 90px;
+    padding: 20px 90px 20px 90px;
+    width: fit-content;
+    color: #FFFFFE;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.about-self-text-button:hover {
+    background: #1D1D1D;
+    color: #FFFFFE;
+}
+
+
+@media only screen and (min-width: 1200px)  {
+    .about-description{
+        margin-bottom: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) and (min-width: 450px) {
+    .about-description{
+        margin-bottom: 40px;
+    }
+    .about-self-photo{
+        width: 100%;
+        height: 720px;
+        margin-bottom: 40px;
+    }
+    .about-self {
+        display: block;
+    }
+    .about-self-text{
+        width: 100%;
+    }
+    .about-self-text-title {
+        width: 90%;
+    }
+    .about-self-text-content{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .about{
+        padding: 60px 10px 60px 10px;
+    }
+    .about-pin{
+        padding: 10px 20px 10px 20px;
+    }
+
+    .about-description{
+        margin-bottom: 30px;
+    }
+    .about-description {
+        width: 100%;
+        font-family: 'Apercu Pro';
+        font-size: 20px;
+        line-height: 31px;
+    }
+    .about-self-photo{
+        width: 100%;
+        height: 500px;
+        margin-bottom: 40px;
+    }
+
+    .about-self {
+        display: block;
+    }
+
+    .about-self-text{
+        width: 90%;
+    }
+
+    .about-self-text-title {
+        font-size: 25px;
+    }
+    
+    .about-self-text-content {
+        font-size: 20px;
+    }
+}

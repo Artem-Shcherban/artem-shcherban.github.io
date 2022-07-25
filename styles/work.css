@@ -1,0 +1,168 @@
+.work{
+    padding: 60px 30px 60px 30px;
+}
+
+.work-pin {
+    border: 1px solid #1D1D1D;
+    border-radius: 90px;
+    width: fit-content;
+    padding: 5px 40px 5px 40px;
+    margin-bottom: 15px;
+}
+
+.work-image {
+    margin-bottom: 30px;
+}
+
+.work-tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 150px 600px 500px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.work-tile {
+    border-radius: 30px;
+    background-color: #1D1D1D;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 30px;
+}
+.work-tile-arrow {
+    padding: 30px;
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 50%;
+    background-color: #F1523C;
+    transition: all .2s ease;
+}
+
+.work-tile-arrow:hover {
+    background-color: #1D1D1D;
+}
+
+.work-tile-arrow img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+    
+.work-tile1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(../assets/les.svg);
+    background-size: cover;
+    
+}
+.work-tile2{
+    grid-area: 2 / 1 / 4 / 2;
+    background-image: url(../assets/china.svg);
+    background-size: cover;
+}
+.work-tile3 {
+    grid-area: 1 / 2 / 3 / 3;
+    background-image: url(../assets/turkish.svg);
+    background-size: cover;
+}
+.work-tile4{
+    grid-area: 3 / 2 / 4 / 3;
+    background-image: url(../assets/malta.svg);
+    background-size: cover;
+}
+.work-tile5 {
+    grid-area: 4 / 1 / 5 / 3;
+    background-image: url(../assets/soundpil.svg);
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 450px) {
+    .work-tiles{
+        display: block;
+    }
+    .work-tile{
+        margin: 40px 0 40px 0;
+    }
+    /* .work-image{
+        display: none;
+    } */
+    .work-tile-arrow{
+        max-width: 80px;
+        max-height: 80px;
+    }
+    .work-tile1 {
+        grid-area: 1 / 1 / 2 / 2;
+        height: 50vh;
+        margin-top: 15px;
+    }
+    .work-tile2{
+        grid-area: 2 / 1 / 4 / 2;
+        height: 90vh;
+    }
+    .work-tile3 {
+        grid-area: 1 / 2 / 3 / 3;
+        height: 60vh;
+    }
+    
+    .work-tile4{
+        grid-area: 3 / 2 / 4 / 3;
+        height: 30vh;
+    }
+    .work-tile5 {
+        grid-area: 4 / 1 / 5 / 3;
+        height: 60vh;
+    }
+
+    .work-tile5 {
+        background-image: url(../assets/soundpil-med.svg);
+        background-size: cover;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .work{
+        padding: 60px 10px 60px 10px;
+    }
+    
+    work-pin{
+        padding: 10px 20px 10px 20px;
+    }
+    .work-tiles{
+        display: block;
+    }
+    .work-tile{
+        margin: 30px 0 30px 0;
+    }
+    /* .work-image{
+        display: none;
+    } */
+    .work-tile-arrow{
+        max-width: 40px;
+        max-height: 40px;
+    }
+    .work-tile1 {
+        grid-area: 1 / 1 / 2 / 2;
+        height: 50vh;
+        margin-top: 15px;
+    }
+    .work-tile2{
+        grid-area: 2 / 1 / 4 / 2;
+        height: 90vh;
+    }
+    .work-tile3 {
+        grid-area: 1 / 2 / 3 / 3;
+        height: 60vh;
+    }
+    
+    .work-tile4{
+        grid-area: 3 / 2 / 4 / 3;
+        height: 30vh;
+    }
+    .work-tile5 {
+        grid-area: 4 / 1 / 5 / 3;
+        height: 60vh;
+    }
+
+    .work-tile5 {
+        background-image: url(../assets/soundpil-small.svg);
+        background-size: cover;
+    }
+}
